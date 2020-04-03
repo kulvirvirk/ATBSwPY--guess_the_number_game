@@ -1,5 +1,10 @@
-# 1. ask the players name
-# 2. 
+# 1. ask the players name and greet them
+# 2. generate a random number
+# 3. ask player to select the number between 1 to 20
+# 4. write a loop to through players input 
+# 5. add if statements to compare input with random number 
+# 6. add counter to count the tries
+# 7. print output with congratulations message and number of tries. 
 
 import random
 player_name = input('Hello, what is your name? ')
@@ -20,5 +25,6 @@ while player_guess != random_number:
     player_guess =int(input('Your guess is too low. Take a guess again:'))
 
 counter = str(counter)
-print('Yes, ' + player_name + ', it took you ' + counter + ' tries!')
+print('Congratulations, ' + player_name + ', it took you ' + counter + ' tries!')
 print('Good job!')
+
