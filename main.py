@@ -19,3 +19,6 @@ while player_guess != random_number:
   elif player_guess < random_number:
     player_guess =int(input('Your guess is too low. Take a guess again:'))
 
+counter = str(counter)
+print('Yes, ' + player_name + ', it took you ' + counter + ' tries!')
+print('Good job!')
