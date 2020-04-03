@@ -28,3 +28,24 @@ counter = str(counter)
 print('Congratulations, ' + player_name + ', it took you ' + counter + ' tries!')
 print('Good job!')
 
+# instructor's solution 
+print('Now with instructor\'s solution')
+print ('Hello, what is your name?')
+name = input()
+secret_number = random.randint(1,20) #randint gives you int range including both end points
+print('Hello, ' + name +  ', I am thinking of a nubmer between 1 and 20. Take a guess: ')
+
+#only give player 6 tries
+for guesses_taken in range(1,7):
+  print('take a guess:')
+  guess = int(input())
+  if guess < secret_number:
+    print ('your guess is too low.')
+  if guess > secret_number:
+    print ('your guess is too high.')
+  else: break
+
+if guess == secret_number:
+  print ('Good job, ' + name + '! you guessed my number in ' + str(guesses_taken) + ' guesses.')
+else:
+  print('Nope. The number I was thinking of was ' + str(secret_number))
