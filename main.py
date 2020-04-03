@@ -9,7 +9,13 @@ print('Hi ' + player_name + '!')
 #generate random number
 random_number = random.randrange(1, 11)
 
-player_guess = input('I am thinking of a nubmer between 1 and 20. Take a guess: ')
+player_guess = int(input('I am thinking of a nubmer between 1 and 20. Take a guess: '))
 
-print(random_number)
+counter = 0
+while player_guess != random_number:
+  counter = counter + 1
+  if player_guess > random_number:
+    player_guess =int(input('Your guess is too high. Take a guess again:'))
+  elif player_guess < random_number:
+    player_guess =int(input('Your guess is too low. Take a guess again:'))
 
